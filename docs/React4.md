@@ -25,7 +25,7 @@ React has four built-in methods that gets called, in this order, when mounting a
 
 The render() method is required and will always be called, the others are optional and will be called if you define them.
 
-### 1.constructor
+### constructor
 
 The constructor() method is called before anything else, when the component is initiated, and it is the natural place to set up the initial state and other initial values.
 
@@ -45,7 +45,7 @@ class Header extends React.Component {
 ReactDOM.render(<Header />, document.getElementById('root'));
 ```
 
-### 2.getDerivedStateFromProps
+### getDerivedStateFromProps
 
 The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM.
 
@@ -84,7 +84,7 @@ class Header extends React.Component {
 ReactDOM.render(<Header />, document.getElementById('root'));
 ```
 
-### 3.componentDidMount
+### componentDidMount
 
 The componentDidMount() method is called after the component is rendered. This is where you run statements that requires that the component is already placed in the DOM.
 
@@ -123,7 +123,7 @@ React has five built-in methods that gets called, in this order, when a componen
 
 The render() method is required and will always be called, the others are optional and will be called if you define them.
 
-### 1.getDerivedStateFromProps
+### getDerivedStateFromProps
 
 Also at updates the getDerivedStateFromProps method is called. This is the first method that is called when a component gets updated.
 
@@ -158,7 +158,7 @@ class Header extends React.Component {
 ReactDOM.render(<Header favcol="yellow" />, document.getElementById('root'));
 ```
 
-### 2.shouldComponentUpdate
+### shouldComponentUpdate
 
 In the shouldComponentUpdate() method you can return a Boolean value that specifies whether React should continue with the rendering or not.
 
@@ -193,7 +193,7 @@ class Header extends React.Component {
 ReactDOM.render(<Header />, document.getElementById('root'));
 ```
 
-### 3.getSnapshotBeforeUpdate
+### getSnapshotBeforeUpdate
 
 In the getSnapshotBeforeUpdate() method you have access to the props and state before the update, meaning that even after the update, you can check what the values were before the update.
 
@@ -242,7 +242,7 @@ class Header extends React.Component {
 ReactDOM.render(<Header />, document.getElementById('root'));
 ```
 
-### 4.componentDidUpdate
+### componentDidUpdate
 
 The componentDidUpdate method is called after the component is updated in the DOM.
 
@@ -290,7 +290,7 @@ React has only one built-in method that gets called when a component is unmounte
 
 1. componentWillUnmount()
 
-### 1.componentWillUnmount
+### componentWillUnmount
 
 The componentWillUnmount method is called when the component is about to be removed from the DOM.
 

@@ -1,8 +1,10 @@
 ---
 id: React5
-title: Lists
-sidebar_label: Lists and Keys
+title: Lists & Keys
+sidebar_label: Lists & Keys
 ---
+
+## List
 
 Lists are very useful when it comes to developing the UI of any website. Lists are mainly used for displaying menus in a website
 
@@ -18,7 +20,7 @@ const updatedNums = numbers.map((number) => {
 ReactDOM.render(<ul>{updatedNums}</ul>, document.getElementById('root'));
 ```
 
-## Rendering lists inside Components
+### Rendering lists inside Components
 
 In the above code in React, we had directly rendered the list to the DOM. But usually this not a good practice to render lists in React. We already have talked about the uses of Components and had seen that everything in React is built as individual components.
 
@@ -41,7 +43,7 @@ ReactDOM.render(
 );
 ```
 
-## Ideal Way to render a list
+### Ideal Way to render a list
 
 ```js title="The Ideal Way to Render a List"
 function IdiomaticReactList(props) {
@@ -68,7 +70,7 @@ const listItems = numbers.map((number) => (
 ));
 ```
 
-## Correct Key Usage
+### Correct Key Usage
 
 Keys only make sense in the context of the surrounding array.
 

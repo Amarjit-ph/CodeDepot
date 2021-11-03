@@ -14,19 +14,20 @@ Created to make webpages more dynamic originally called LiveScript but due to po
 
 - Dynamic weakly typed programming language
 - Interpreted on the fly
-- Hosted language Runs in diffrerent environments
+- Hosted language Runs in different environments
 - Most prominent use : Run code in a browser
 
-## Dynamic & weakly typed
+## Dynamic & Weakly typed
 
 Not pre-compiled instead parsed and Compile Fast (In browser), Code evaluated and executed in runtime, Code can change at runtime.
 
 Data types are assumed automatically, You don't define that some variable has to hold a certain value, Data types can change.
 
-## JavaScript Execution
+## Javascript Execution
 
-1. Javascript Execution `Your code > JavaScript engine > Effect on webpage`
-2. JavaScript engine `Parse Code > Compile to machine code > Execute Machine Code [ Single Thread ]`
+**Javascript Execution**<br/>Your code > JavaScript engine > Effect on webpage
+
+**JavaScript Engine** <br/>Parse Code > Compile to machine code > Execute Machine Code <br/>[ Single Thread ]
 
 - V8 (chrome)
 - SpiderMonkey (Firefox)

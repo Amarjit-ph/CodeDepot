@@ -4,7 +4,7 @@ title: React
 sidebar_label: Introduction
 ---
 
-[React Developer Roadmap](https://roadmap.sh/react) - Everything that is there to learn about React and the ecosystem in 2021.
+Everything that is there to learn about React and the ecosystem in 2021 [React Developer Roadmap](https://roadmap.sh/react)
 
 React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded.
 
@@ -34,7 +34,7 @@ It is called JSX, and it is a syntax extension to JavaScript. We recommend using
 
 After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects. This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:
 
-`{ }` - Use Bracket to write Javascript to render template<br/> `()` - JSX should be inside a bracket
+`{}` - Use Bracket to write Javascript to render template<br/> `()` - JSX should be inside a bracket
 
 ```js title="JSX Expression"
 let user = {
@@ -63,9 +63,6 @@ var user = {
   Address: 'Chandigarh',
 };
 
-// condition ? exprIfTrue : exprIfFalse
-
-// STYLE 1
 function getLoc(location) {
   if (location) {
     return <h1>LOCATION : {location}</h1>;
@@ -73,8 +70,6 @@ function getLoc(location) {
     return undefined;
   }
 }
-
-// STYLE 2
 var template3 = (
   <div>
     <h1> NAME : {user.name ? user.name : 'Anonymous'} </h1>

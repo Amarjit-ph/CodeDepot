@@ -1,8 +1,10 @@
 ---
 id: React6
-title: Event
+title: Events & Forms
 sidebar_label: Events & Forms
 ---
+
+## Event
 
 Handling events with React elements is very similar to handling events on DOM elements.
 
@@ -15,7 +17,7 @@ There are some syntax differences:
 <button onClick={activateLasers}>Activate Lasers</button>
 ```
 
-## Event Handlers
+### Event Handlers
 
 A good practice is to put the event handler as a method in the component class:
 
@@ -32,7 +34,7 @@ class Football extends React.Component {
 ReactDOM.render(<Football />, document.getElementById('root'));
 ```
 
-## Passing Arguments
+### Passing Arguments
 
 If you want to send parameters into an event handler, you have two options:
 
@@ -86,7 +88,7 @@ HTML form elements work a little bit differently from other DOM elements in Reac
 </form>
 ```
 
-## Handling Forms
+### Handling Forms
 
 Handling forms is about how you handle the data when it changes value or gets submitted.
 
@@ -120,7 +122,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-## Conditional Rendering
+### Conditional Rendering
 
 If you do not want to display the h1 element until the user has done any input, you can add an if statement.
 
@@ -161,7 +163,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-## Submitting Forms
+### Submitting Forms
 
 You can control the submit action by adding an event handler in the onSubmit attribute:
 
@@ -195,7 +197,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-## Multiple Input Fields
+### Multiple Input Fields
 
 You can control the values of more than one input field by adding a name attribute to each element.When you initialize the state in the constructor, use the field names. To access the fields in the event handler use the event.target.name and event.target.value syntax.
 
@@ -235,7 +237,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-## Validating Form Input
+### Validating Form Input
 
 You can validate form input when the user is typing or you can wait until the form gets submitted.
 
@@ -278,7 +280,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-## Adding Error Message
+### Adding Error Message
 
 Error messages in alert boxes can be annoying, so let's make an error message that is empty by default, but displays the error when the user inputs anything invalid:
 

@@ -5,29 +5,26 @@ sidebar_label: Basic Syntax
 ---
 
 - Dive into core syntax
-- Understand variables & datatypes
+- Understand variables & data types
 - Work with operators
 - Explore & user function
 - Scope & type conversion
 
-## Adding Javascript to Website
+### Adding Javascript
 
-**Internal** - `<script> alert("Hello World") </script>`<br/> **External** - `<script src="assets/scripts/app.js"></script>`
+**Internal** - `<script>alert("Hello World") </script>`<br/> **External** - `<script src="assets/scripts/app.js"></script>`
 
-## Variables & Constants
+### Variables & Constants
 
-Varibale is a data container - `let userName = 'Max';`<br/> Where the value can change - `userName = 'Maxi';`
+Variables is a data container - let userName = 'Max';<br/> Where the value can change - userName = 'Maxi';
 
 Constant is also a data container - `const total = 15;`<br/> Where value must not change - `totalUser = 20;`
 
-**Namming Convention**
+**Naming Convention**
 
-- `let userName` [ camelCase ]
-- `let ageGroup5` [ only letter & digits ]
-- `let $kindOfSpecial` [ Starting with $ ]
-- `let _internalValue` [ Starting with _ ]
+let userName [ camelCase ]<br/> let ageGroup5 [ only letter & digits ] <br/> let $kindOfSpecial [ Starting with $ ]<br/> let \_internalValue [ Starting with \_ ]<br/>
 
-Constant - `const ATTACK_VALUE = 10;`<br/> Event Listner - ` onClick or clickHandler`
+Constant - const ATTACK_VALUE = 10;<br/> Event Listener - onClick or clickHandler
 
 **Bad Practice**
 
@@ -36,11 +33,11 @@ Constant - `const ATTACK_VALUE = 10;`<br/> Event Listner - ` onClick or clickHan
 - `let user-b` [ No special characters ]
 - `let let` [ keywords not allowed ]
 
-## Operators
+### Operators
 
 Add two number [ + ]<br/> Subtract two number [ - ]<br/> Multiply two number [ * ]<br/> Divide two number [ / ]<br/> Divide two numbers,remainders [ % ]<br/> Exponentiation [ ** ] [2**3 = 8]<br/> Assign value to variable [ = ]<br/> Perform calculation and reassign result to variable [ +=, -= ]<br/> Increment / Decrement<br/> variable value + re-assign [ ++,-- ]<br/>
 
-## Data types
+### Data types
 
 **Primitives**
 
@@ -51,8 +48,8 @@ Add two number [ + ]<br/> Subtract two number [ - ]<br/> Multiply two number [ *
 
 **Reference**
 
-- Obj1ects - { name: 'Max', age: 31 }
-- Arrays - [1, 3, 5] ( Sepcial Object )
+- Objects - { name: 'Max', age: 31 }
+- Arrays - [1, 3, 5] ( Special Object )
 - Function - function(){}
 
 :::note Data Copy<br/><br/> Primitives are copied by value<br/> References are copied by reference
@@ -61,7 +58,7 @@ Add two number [ + ]<br/> Subtract two number [ - ]<br/> Multiply two number [ *
 
 String Interpolation `(${defaultResult}+10)*3/2-1)`
 
-## Functions
+### Functions
 
 A function is a procedure—a set of statements that performs a task or calculates a value,
 
@@ -73,7 +70,7 @@ function greetUser(name) {
 greetUser('Max');
 ```
 
-## Global & Local Scope
+### Global & Local Scope
 
 ```js title="Global Scope"
 let result; // GLOBAL
@@ -108,7 +105,7 @@ You might've expected that an error gets thrown because we use and declare userN
 
 It indeed is not allowed on the same level/ in the same scope.
 
-## Type Conversion
+### Type Conversion
 
 **FYI - Every HTML input will always be string**
 
@@ -124,7 +121,7 @@ It indeed is not allowed on the same level/ in the same scope.
 - (++A) = Increment before assigning
 - (A++) = Increment after assignig
 
-## Array
+### Array
 
 JavaScript arrays are used to store multiple values in a single variable.
 
@@ -134,7 +131,7 @@ fruits.pop(); // Removes the last element
 fruits.push('Kiwi'); //  Adds a new element ("Kiwi") to fruits
 ```
 
-## Objects
+### Objects
 
 ```js title="Objects"
 var car = {
@@ -148,7 +145,7 @@ objectName.propertyName;
 objectName['propertyName'];
 ```
 
-## Null & Undefined
+### Null & Undefined
 
 **Undefined**
 
@@ -167,7 +164,7 @@ objectName['propertyName'];
 
 2. It yields a new NaN and it’s the result of invalid calculations
 
-## Typeof
+### Types
 
 - typeof 'Max' = String
 - typeof 2 = Number

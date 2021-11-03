@@ -1,12 +1,12 @@
 ---
 id: React3
-title: Props & State
-sidebar_label: Props & State
+title: State & Props
+sidebar_label: State & Props
 ---
 
 Props are used to pass data, whereas state is for managing data. Data from props is read-only, and cannot be modified by a component that is receiving it from outside. State data can be modified by its own component, but is private (cannot be accessed from outside)
 
-## React Props
+## Props
 
 Props are arguments passed into React components. Props are passed to components via HTML attributes.
 
@@ -28,7 +28,7 @@ class Car extends React.Component {
 }
 ```
 
-## Pass Data
+### Passing Data
 
 Props are also how you pass data from one component to another, as parameters.
 
@@ -53,7 +53,7 @@ class Garage extends React.Component {
 ReactDOM.render(<Garage />, document.getElementById('root'));
 ```
 
-## Props in the Constructor
+### Props in the Constructor
 
 If your component has a constructor function, the props should always be passed to the constructor and also to the React.Component via the super() method.
 
@@ -70,11 +70,11 @@ class Car extends React.Component {
 ReactDOM.render(<Car model="Mustang" />, document.getElementById('root'));
 ```
 
-## React State
+## State
 
 React components has a built-in state object. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders.
 
-## Creating State Object
+### Creating State Object
 
 ```js title="Creating State Object"
 class Car extends React.Component {
@@ -92,7 +92,7 @@ class Car extends React.Component {
 }
 ```
 
-## Using State Object
+### Using State Object
 
 ```js title="Using State Object"
 class Car extends React.Component {
@@ -120,7 +120,7 @@ class Car extends React.Component {
 }
 ```
 
-## Changing State
+### Changing State
 
 ```js title="Changing State"
 class Car extends React.Component {

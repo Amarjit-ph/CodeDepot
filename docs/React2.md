@@ -10,12 +10,12 @@ Components are independent and reusable bits of code. They serve the same purpos
 - Individual piece of User Interface
 - Custom Html Element [React Component]
 
-Components come in two types,
+Components come in two types :
 
 1. Class components
 2. Function components
 
-**Rules:**
+Class Components rules :
 
 - Uppercase First Letter is Important is React Components
 - Differentiate Between Html and Components
