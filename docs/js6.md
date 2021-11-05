@@ -26,13 +26,21 @@ person.greet();
 
 ## Accessing Properties
 
-objectName.property - `person.age`<br/> objectName["property"] - `person["age"]`<br/> objectName[expression] - `x = "age"; person[x]`<br/>
+```js
+objectName.property      [  person.age           ]
+objectName["property"]   [  person["age"]        ]
+objectName[expression]   [  x = "age"; person[x] ]
+```
 
-## Adding, Modifying & Deleting Properties
+## Adding & Modifying Properties
 
-Add - `person.isAdmin = true;`<br/> Modify - `person.name = 'Rahul Dev'`<br/> Delete - `delete person.age | person.age = null`<br/>
+```js
+person.isAdmin = true;      [Add]
+person.name = 'Rahul Dev';  [Modify]
+person.age = null;          [Delete]
+```
 
-## "This" Keyword
+## This Keyword
 
 In a function definition, this refers to the "owner" of the function. In the example above, this is the person object that "owns" the fullName function.
 

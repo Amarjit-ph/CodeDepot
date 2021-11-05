@@ -113,10 +113,10 @@ myPromise
 
 ## Async & Await
 
-`"async and await make promises easier to write"`
+**Async and await make promises easier to write**
 
-- async makes a function return a Promise
-- await makes a function wait for a Promise
+- Async makes a function return a Promise
+- Await makes a function wait for a Promise
 
 ```js
 function makeRequest(location) {
@@ -139,7 +139,7 @@ function processRequest(response) {
 }
 ```
 
-USING PROMISE
+### Promise
 
 ```js
 makeRequest('Google')
@@ -155,7 +155,7 @@ makeRequest('Google')
   });
 ```
 
-USING ASYNC & AWAIT
+### Async & Await
 
 ```js
 async function getLocation() {

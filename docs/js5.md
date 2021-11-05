@@ -15,19 +15,27 @@ JavaScript arrays are used to store multiple values in a single variable.
 
 Technical - Objects that implement the “iterable” protocol and have an @@iterator method (i.e.Symbol.iterator)
 
-To us humans - Objects where you can use the for-of loop.
+- To us humans - Objects where you can use the for-of loop.
+- An Array-like Object - Objects that have a length property and use indexes to access items
 
-An Array-like Object - Objects that have a length property and use indexes to access items
-
-`Not every iterable is an array! Other iterables are (for example): NodeList, String, Map, Set`
+Not every iterable is an array! Other iterables are (for example): NodeList, String, Map, Set
 
 ## Creating Array
 
-Best & common - ` const number = [1,2,3];` <br/> Constructor - ` const moreNumber = new Array();`<br/> Constructor with values - ` const words = new Array(1,2,3)`<br/> Length of array - ` const array5 = new Array(5)` <br/> Create from arguments- ` const yetMoreNumber = Array.of(1,2)` <br/> Copy from iterable object - ` const number = Array.from("hi!")` <br/>
+```js
+const number = [1,2,3];              Best & common
+const moreNumber = new Array();      Constructor
+const words = new Array(1,2,3);      Constructor with values
+const array5 = new Array(5)          Length of array
+const yetMoreNumber = Array.of(1,2)  Create from arguments
+const number = Array.from("hi!")     Copy from iterable object
+```
 
-## Array datatypes
+## Array Datatype
 
-Similar type - `['Cooking','Sports'];` <br/> Different type - `[30,'Max',{moreDetail:[]}];` <br/> Multidimensional - `[[1,0.6],[-5.4,2.1]]` <br/>
+1. Similar type - `['Cooking','Sports'];`
+2. Different type - `[30,'Max',{moreDetail:[]}];`
+3. Multidimensional - `[[1,0.6],[-5.4,2.1]]`
 
 ```js title="Multidimensional"
 const analyticsData = [
@@ -58,8 +66,8 @@ fruits.unshift('Lemon'); // Adds a new element at beginning
 
 The splice() method can be used to add new items to an array: `fruits.splice(2, 0, "Lemon", "Kiwi");`
 
-- first parameter (2) defines the position where new elements should be added
-- second parameter (0) defines how many elements should be removed.
+- First parameter (2) defines the position where new elements should be added
+- Second parameter (0) defines how many elements should be removed.
 - The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
 
 ```js title="Splice"
@@ -79,7 +87,7 @@ fruits.splice(0, 1);
 The concat() method creates a new array by merging existing arrays.
 
 ```js title="Concatenation"
-var arr1 = ['Cecilie', 'Lone'];
+var arr1 = ['Cecile', 'Lone'];
 var arr2 = ['Emil', 'Tobias', 'Linus'];
 var arr3 = ['Robin', 'Morgan'];
 var child = arr1.concat(arr2); // contact arr1 & arr2
@@ -269,7 +277,7 @@ console.log(rest); // {c: 30, d: 40}
 
 ## Maps & Sets
 
-Array
+### Array
 
 - Store data of any kind and length
 - Iterable & special methods available
@@ -277,23 +285,23 @@ Array
 - Duplicates are allowed
 - Zero-based index to access elements
 
-Sets
+### Sets
 
 - Store data of any kind and length
 - Iterable & special methods available
-- Order is `not guaranteed`
-- Duplicates are `not allowed`
-- `No index` to access elements
+- Order is not guaranteed
+- Duplicates are not allowed
+- No index to access elements
 
-Maps
+### Maps
 
-- Store data of any kind and length, `any values are allowed`
+- Store data of any kind and length, any values are allowed
 - Iterable & special methods available
 - Order is guaranteed
-- Duplicates key are `not allowed`
-- `Key based` to access elements
+- Duplicates key are not allowed
+- Key based to access elements
 
-**WORKING WITH SETS**<br/> Best for manage unqiue values
+**WORKING WITH SETS**<br/> Best for manage unique values
 
 ```js title="Set"
 const ids = new Set([1, 2, 3]);

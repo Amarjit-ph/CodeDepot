@@ -12,12 +12,16 @@ sidebar_label: Control Structures
 
 ## Boolean Operators
 
-- Check for value equality `a == b`
-- Check for value inequality `a != b`
-- Check for value AND type (in) equality `a === b / a !== b`
-- Check for value being greater / smaller `a > b / a < b`
-- Check for value being greater or equal / smaller or equal `a >= b / a <= b`
-- Check if NOT true `!a`
+```js
+Check for value equality        [ a == b ]
+Check for value inequality      [ a != b ]
+Check for value & type equality [ a === b ]
+Check for value greater         [ a > b / a < b ]
+Check for value greater & equal [ a >= b / a <= b ]
+Check if both values are true   [ a && b ]
+Check if either value is true   [ a || b ]
+Check if value is false         [ !a ]
+```
 
 **_Boolean Tricks & Shorthand_**
 
@@ -30,48 +34,7 @@ sidebar_label: Control Structures
   via AND operator - `const name = isLoggedIn && ‘Max’`
 ```
 
-## If else and Else-if
-
-```js title="If"
-const enteredNumber = getUserNumberInput();
-if (
-  (calculationType !== 'ADD' &&
-    calculationType !== 'SUBTRACT' &&
-    calculationType !== 'MULTIPLY' &&
-    calculationType !== 'DIVIDE') ||
-  !enteredNumber
-) {
-  return;
-}
-```
-
-```js title="If Else"
-if (calculation == 'ADD') {
-  console.log('+');
-} else {
-  console.log('Not Add');
-}
-```
-
-```js title="Else If"
-const initialResult = currentResult;
-let mathOperator;
-if (calculationType === 'ADD') {
-  currentResult += enteredNumber;
-  mathOperator = '+';
-} else if (calculationType === 'SUBTRACT') {
-  currentResult -= enteredNumber;
-  mathOperator = '-';
-} else if (calculationType === 'MULTIPLY') {
-  currentResult *= enteredNumber;
-  mathOperator = '*';
-} else if (calculationType === 'DIVIDE') {
-  currentResult /= enteredNumber;
-  mathOperator = '/';
-}
-```
-
-## Logical AND & OR Operator
+## Logical Operator
 
 ```js title="And"
 if (
@@ -115,9 +78,17 @@ console.log((a = b = 5));
 
 **_REFERENCE WEBSITE_** - [Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-## "Truthy" & "Falsy" Values
+## Truthy & Falsy Values
 
-**0** -> `false`<br/> **Any other number (incl. negative numbers)** -> `true`<br/> **””** (empty string) -> `false`<br/> **ny other non-empty string (incl. “false”)** -> `true`<br/> **{}, [] & all other objects or arrays** -> `true`<br/> **null, undefined, NaN** -> `false`<br/>
+```js
+Any Number (incl. negative numbers)            = [true]
+Any Non-empty string (incl. “false”)           = [true]
+{}, [] & all other objects or arrays           = [true]
+
+0                                              = [false]
+” ” (empty string)                             = [false]
+null, undefined, NaN                           = [false]
+```
 
 ```js title="Conventional"
 const nameInput = ‘Max’;
@@ -139,6 +110,47 @@ const userName = if (isLogin) {
 return ‘Max’;
 } else {
 return null;
+}
+```
+
+## If Else
+
+```js title="If"
+const enteredNumber = getUserNumberInput();
+if (
+  (calculationType !== 'ADD' &&
+    calculationType !== 'SUBTRACT' &&
+    calculationType !== 'MULTIPLY' &&
+    calculationType !== 'DIVIDE') ||
+  !enteredNumber
+) {
+  return;
+}
+```
+
+```js title="If Else"
+if (calculation == 'ADD') {
+  console.log('+');
+} else {
+  console.log('Not Add');
+}
+```
+
+```js title="Else If"
+const initialResult = currentResult;
+let mathOperator;
+if (calculationType === 'ADD') {
+  currentResult += enteredNumber;
+  mathOperator = '+';
+} else if (calculationType === 'SUBTRACT') {
+  currentResult -= enteredNumber;
+  mathOperator = '-';
+} else if (calculationType === 'MULTIPLY') {
+  currentResult *= enteredNumber;
+  mathOperator = '*';
+} else if (calculationType === 'DIVIDE') {
+  currentResult /= enteredNumber;
+  mathOperator = '/';
 }
 ```
 
@@ -167,7 +179,7 @@ return null;
 
 :::note Remember
 
-**Statement** - one instruction<br/> **Expression** - Return a value
+**Statement** - One instruction<br/> **Expression** - Return a value
 
 :::
 
@@ -204,7 +216,7 @@ switch (new Date().getDay()) {
 
 Execute code multiple times
 
-**For Loop**
+### For Loop
 
 Execute code a certain amount of times (with counter variable)
 
@@ -214,7 +226,7 @@ for (let i = 0; i < 3; i++) {
 }
 ```
 
-**for-of loop**
+### for-of loop
 
 Execute for every element in an array
 
@@ -224,7 +236,7 @@ for (const el of array) {
 }
 ```
 
-**for-in loop**
+### for-in loop
 
 Execute for every key in an object
 
@@ -235,7 +247,7 @@ for (const key in obj) {
 }
 ```
 
-**while loop**
+### while loop
 
 Execute code as long as a condition is true
 
@@ -245,7 +257,7 @@ while (isLoggedIn) {
 }
 ```
 
-**Do while loop**
+### Do while loop
 
 Execute code as long as a condition is true
 
@@ -285,8 +297,7 @@ for (i = 0; i < 10; i++) {
 
 Some errors can‘t be avoided (beyond your control as a developer)
 
-- User Input Errors `e.g. user enters text like ‘hi’ instead of a number`
-- Network Errors `e.g. server is offline`
+**User Input Errors** <br/>Example : User enters text like ‘hi’ instead of a number<br/><br/>**Network Errors** <br/>Example : Server is offline
 
 Throw and catch errors to fail gracefully or recover if possible
 

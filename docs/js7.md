@@ -14,7 +14,7 @@ The Document Object Model (DOM) is a programming interface for HTML and XML docu
 Every web page resides inside a browser window which can be considered as an object.
 
 1. Window object − Top of the hierarchy. It is the outmost element of the object hierarchy.
-2. Document object − `Each HTML document that gets loaded into a window becomes a document object.` The document contains the contents of the page.
+2. Document object − Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.
 3. Form object − Everything enclosed in the `<form>...</form>` tags sets the form object.
 4. Form control elements − The form object contains all the elements defined for that object such as text fields, buttons, radio buttons, and checkboxes.
 
@@ -27,8 +27,8 @@ WebAPI allow javascript to work with parsed document.
 
 Two important global object :
 
-- `Document`
-- `Window`
+- Document
+- Window
 
 **Document** = Root DOM Node > Provides access to element querying ,DOM content etc.<br/> **Window** = Access to Browser API > The active Browser Tab -> Acts as global storage for script, also provides access to window specific properties and methods
 
@@ -36,7 +36,7 @@ Two important global object :
 console.dir(document);
 ```
 
-**DOCUMENT** - Tree of Element Node<br/> **TEXT NODE** = Space between Element Node
+**DOCUMENT** - Tree of Element Node<br/> **TEXT NODE** - Space between Element Node
 
 ## Nodes & Elements
 
@@ -85,7 +85,7 @@ Document Element
 <p id="welcome-text" class="text-default">Welcome!</p>
 ```
 
-Assignning
+Assigning
 
 ```js
 const p = document.getElementById('welcome-text');

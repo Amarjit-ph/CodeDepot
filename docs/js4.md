@@ -1,8 +1,9 @@
 ---
 id: js4
 title: Function
-sidebar_label: Function 
+sidebar_label: Function
 ---
+
 - Different ways of creating functions
 - Anonymus functions
 - Callback function & functions in function
@@ -10,6 +11,7 @@ sidebar_label: Function
 - Bind & More
 
 ## Introduction
+
 A function is a block of code designed to perform a particular task, function is executed when "something" invokes it (calls it).
 
 1. Functions are **"Code on Demand"**<br/>
@@ -23,7 +25,7 @@ A function is a block of code designed to perform a particular task, function is
 
 ```js title="Function"
 function greet() {
-  console.log("Hello");
+  console.log('Hello');
 }
 
 console.log(dir(greet()));
@@ -40,9 +42,10 @@ console.log(dir(greet()));
     __proto__: ƒ();
 */
 ```
+
 ```js title="Functions can also be stored in varaible"
 const start = function start() {
-  console.log("Game is starting..");
+  console.log('Game is starting..');
 };
 ```
 
@@ -64,19 +67,17 @@ const multiply = function (a, b) {
 };
 ```
 
-## Anonymus function
+### Anonymus function
+
 ```js title="Anonymus function"
 const anonymus = (function () {
   // Some code
 })();
 ```
 
-## Arrow function
+### Arrow function
 
-No Arguments / Parameters`() => { … }`<br/>
-Exactly one Parameter `arg => { … }`<br/>
-Exactly one expression in function body `(a, b) => a + b`<br/>
-More than one expression in function body<br/>
+No Arguments / Parameters`() => { … }`<br/> Exactly one Parameter `arg => { … }`<br/> Exactly one expression in function body `(a, b) => a + b`<br/> More than one expression in function body<br/>
 
 ```js title="Arrow function"
 (a, b) => {
@@ -85,17 +86,17 @@ More than one expression in function body<br/>
 };
 ```
 
-## Callback Function
+### Callback Function
 
 A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
 ```js title="Callback Function"
 function greeting(name) {
-  alert("Hello " + name);
+  alert('Hello ' + name);
 }
 
 function processUserInput(callback) {
-  var name = prompt("Please enter your name.");
+  var name = prompt('Please enter your name.');
   callback(name);
 }
 
@@ -138,47 +139,41 @@ sumUp(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 ## Call, Apply & Bind
 
-
-The **call()** method, you can write a method that can be used on different objects.<br/>
-The **apply()** method is similar to the **call()** but takes arguments as an array.<br/>
-The **bind()** method creates a new function that, when called, has its this keyword set to the provided value,<br/>
-with a given sequence of arguments preceding any provided when the new function is called.
-
+The **call()** method, you can write a method that can be used on different objects.<br/> The **apply()** method is similar to the **call()** but takes arguments as an array.<br/> The **bind()** method creates a new function that, when called, has its this keyword set to the provided value,<br/> with a given sequence of arguments preceding any provided when the new function is called.
 
 ```js title="Call"
 var person = {
   fullName: function () {
-    return this.firstName + " " + this.lastName;
+    return this.firstName + ' ' + this.lastName;
   },
 };
 var person1 = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: 'John',
+  lastName: 'Doe',
 };
 var person2 = {
-  firstName: "Mary",
-  lastName: "Doe",
+  firstName: 'Mary',
+  lastName: 'Doe',
 };
 person.fullName.call(person1); // Will return "John Doe"
 ```
 
 ```js title="Apply"
 var person = {
-  fullName: function(city, country) {
-    return this.firstName + " " 
-    + this.lastName + "," + city + "," + country;
-  }
-}
+  fullName: function (city, country) {
+    return this.firstName + ' ' + this.lastName + ',' + city + ',' + country;
+  },
+};
 var person1 = {
-  firstName:"John",
-  lastName: "Doe"
-}
-person.fullName.apply(person1, ["Oslo", "Norway"]);
+  firstName: 'John',
+  lastName: 'Doe',
+};
+person.fullName.apply(person1, ['Oslo', 'Norway']);
 ```
 
 ```js title="Bind"
 const obj = {
-  name: "AMARJIT",
+  name: 'AMARJIT',
   getName() {
     return this.name;
   },
@@ -192,7 +187,7 @@ const getName = obj.getName.bind(obj);
 console.log(getName());
 
 //Bind with parameter
-const getName = obj.getName.bind({ name: "Andrew" });
+const getName = obj.getName.bind({name: 'Andrew'});
 console.log(getName());
 ```
 
@@ -205,12 +200,12 @@ function outer(outerVariable) {
   const outerNumber = 2198;
 
   return function inner(innerVariable) {
-    console.log("Outer Variable: " + outerVariable);
-    console.log("Inner Variable: " + innerVariable);
-    console.log("Outer Number: " + outerNumber);
+    console.log('Outer Variable: ' + outerVariable);
+    console.log('Inner Variable: ' + innerVariable);
+    console.log('Outer Number: ' + outerNumber);
   };
 }
 
-const newFunction = outer("Outside");
-newFunction("Inside");
+const newFunction = outer('Outside');
+newFunction('Inside');
 ```
