@@ -29,9 +29,9 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
-        },  
+        },
         {
-          href: 'https://devhints.io/',
+          href: 'https://github.com/Amarjit-ph/CodeDepot',
           label: 'Cheatsheets',
           position: 'left',
         },
