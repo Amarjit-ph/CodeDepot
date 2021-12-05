@@ -1,12 +1,7 @@
-/*
- * Author: Amarjit Pheiroijam
- * Created Date: Sunday, August 2nd 2020, 12:51:07 am
-*/
 
-# CODE DEPOT
-Personal code storage space & references for improving coding experience.
+# CheatSheets for Developers 
 
-## Cheat Sheets for Developers 
+I compiled a list of the (in my opinion) best Cheat sheets and tutorials for some of the languages, frameworks and tools out there. I considered clarity, interactivity and simplicity for beginners. Lets go!
 
 Technology Interview
 - [Interview Handbook ](https://yangshun.github.io/tech-interview-handbook/cheatsheet/)
@@ -62,3 +57,4 @@ Visual Studio Code
 - https://devhints.io/vscode
 - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+
