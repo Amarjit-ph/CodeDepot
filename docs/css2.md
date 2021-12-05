@@ -22,24 +22,6 @@ Explanation of the different parts:
 4. **Margin** - Clears an area outside the border. The margin is transparent
 
 
-## Border
-
-**Border Style** -
-The border-style property sets the style of an element's four borders. This property can have from one to four values.
-1. dotted
-2. dashed
-3. solid 
-4. double
-
-**Border Width** - The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
-
-```css title="Border"
-p {
-  border: 5px solid red;
-}
-```
-
-
 ## Margin
 Margins are used to create space around elements, outside of any defined borders.
 ``` css title="Margin"
@@ -48,8 +30,47 @@ p {
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
+  
+  You can set the margin property to auto
+  to horizontally center the element within its container.
+
+  The element will then take up the specified width, and
+  the remaining space will be split equally
+  between the left and right margins.
+
+  [Assign specific width to see the effect]
+  
+  margin: auto;
+}
+
+/* SHORT HAND */
+div{
+  margin: 25px 50px 75px 100px;
 }
 ```
+## Border
+1. **Border Style** -
+The border-style property sets the style of an element's four borders. This property can have from one to four values.
+
+2. **Border Width** - The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
+
+```css title="Border"
+div{
+  border-style: dotted | dashed | solid | double;
+  border-width: 25px 10px 4px 35px; 
+  /* TOP RIGHT BOTTOM LEFT */
+  border-color: red;
+}
+
+
+/* SHORT HAND */
+p {
+  border: 5px solid red;
+}
+```
+
+
+
 ## Padding
 The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
 
@@ -59,27 +80,7 @@ div {
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
-}
-```
 
-## Backgrounds
-The CSS background properties are used to define the background effects for elements.
-1. background-color -`background-color:blue:`
-2. background-image - `background-image:url("paper.png");`
-3. background-repeat - `background-repeat: no-repeat;`
-4. background-attachment - `background-attachment: fixed;`
-5. background-position - `background-position: right top;`
-
-## Height & Width
-
-The height and width properties are used to set the height and width of an element.
-
-The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
-
-``` css title="Height & Width"
-div {
-  height: 200px;
-  width: 50%;
-  background-color: powderblue;
+  padding: 25px 50px 75px 100px;
 }
 ```

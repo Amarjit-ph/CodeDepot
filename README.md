@@ -1,33 +1,33 @@
+/*
+ * Author: Amarjit Pheiroijam
+ * Created Date: Sunday, August 2nd 2020, 12:51:07 am
+*/
+
 # CODE DEPOT
 Personal code storage space & references for improving coding experience.
 
 ## Cheat Sheets for Developers 
 
 Technology Interview
-- https://yangshun.github.io/tech-interview-handbook/cheatsheet/
-- https://github.com/TSiege/Tech-Interview-Cheat-Sheet
+- [Interview Handbook ](https://yangshun.github.io/tech-interview-handbook/cheatsheet/)
+- [DSA Interview](https://github.com/TSiege/Tech-Interview-Cheat-Sheet)
 
 Complexity
-- https://www.bigocheatsheet.com/
-- http://cooervo.github.io/Algorithms-DataStructures-BigONotation/
-
-C++
-- https://www.educba.com/c-programming-language-basics/
+- [Big O Cheatsheet](http://cooervo.github.io/Algorithms-DataStructures-BigONotation/)
 
 JavaScript, ES2015+
-- https://htmlcheatsheet.com/js/
-- https://devhints.io/es6
-- http://www.developer-cheatsheets.com/es6
+- [Javascript](https://htmlcheatsheet.com/js/)
+- [ES6 Devhints](https://devhints.io/es6)
+- [ES6 Developer](http://www.developer-cheatsheets.com/es6)
 
 TypeScript
-- https://learnxinyminutes.com/docs/typescript/
-- https://devhints.io/typescript
+- [Typescript in Minutes](https://learnxinyminutes.com/docs/typescript/)
+- [Typescript Devhints](https://devhints.io/typescript)
 
 Java
-- https://overapi.com/java
-- https://cheatography.com/son9912/cheat-sheets/java-oop-concept/
-- https://www.educba.com/category/software-development/software-development-tutorials/java-tutorial/
-- https://dev.to/monknomo/java-8-stream-cheatsheet--oad
+- [Java OverApi](https://overapi.com/java)
+- [Java CheatSheet](https://cheatography.com/son9912/cheat-sheets/java-oop-concept/)
+- [Java Tutorial](https://www.educba.com/category/software-development/software-development-tutorials/java-tutorial/)
 
 SQL, MySQL
 - https://devhints.io/mysql
@@ -50,9 +50,7 @@ Node.js
 - https://dev.to/jorge_rockr/everything-you-need-to-know-about-node-js-lnc
 
 NPM
-- https://devhints.io/npm
-- https://guide.freecodecamp.org/developer-tools/npm-cheatsheet/
-- https://dev.to/therealdanvega/creating-your-first-npm-package-2ehf
+- [Npm Devhints](https://devhints.io/npm)
 
 Git
 - http://www.ndpsoftware.com/git-cheatsheet.html

@@ -6,40 +6,44 @@ sidebar_label: Layout
 import  useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Introduction
-The display property is the most important CSS property for controlling layout.
-
-The display property specifies if/how an element is displayed.
-
 Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
 
-## Block level Elements
+## Display
+The display property specifies if/how an element is displayed.
+Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
+
+```css title="Display Properties"
+div{
+  display: block | inline ;
+  display: none;
+  visibility:hidden;
+}
+```
+### Block level Elements
+
 A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
 
 ``` html title="Block level Elements"
-<h1> <div> <p> <form> <header> <footer> <section>
+<div> 
+<h1> - <h6>
+<p>
+<form> 
+<header>
+<footer>
+<section>
 ```
 
-## Inline Elements
+### Inline Elements
 An inline element does not start on a new line and only takes up as much width as necessary.
 
 This is an inline `<span>` element inside a paragraph.
 
 ```html title="Inline Elements"
-<span> <a> <img>
+<span>
+<a>
+<img>
 ```
-## Display
-
-Display is commonly used with JavaScript to hide and show elements without deleting and recreating them. <br/>
-` display: none`
-
-## Max Width
-A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
-
-Setting the width of a block-level element will prevent it from stretching out to the edges of its container. 
-
-Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:
-
-[Example - Max-with with Automargin in W3 School](https://www.w3schools.com/css/tryit.asp?filename=trycss_max-width)
+# HERE CONTINUE
 
 ## Position
 The position property specifies the type of positioning method used for an element.
@@ -57,9 +61,20 @@ However; if an absolute positioned element has no positioned ancestors, it uses 
 5. **sticky** is positioned based on the user's scroll position.
 A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed)
 
+```css
+Static   =  Position in Normal flow of page
+Relative =  Position in relative to its normal position
+Absolute =  Position relative to the nearest positioned ancestor
+Fixed    =  Position relative to the viewport
+Sticky   =  Position based on user scroll position
+
+Position are mostly used with top, right, bottom, and left properties
+```
 
 ## Float 
-The `float` property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+The `float` property is used for positioning and formatting content 
+
+Example : let an image float left to the text in a container will make image move left and right will be texts that flow with the image.
 
 - **left** - The element floats to the left of its container
 - **right** - The element floats to the right of its container
@@ -67,11 +82,6 @@ The `float` property is used for positioning and formatting content e.g. let an 
 - **inherit** - The element inherits the float value of its parent
 In its simplest use, the float property can be used to wrap text around images.
 
-```css title="Float"
-img {
-  float: right;
-}
-```
 ## Clear
 The `clear` property specifies what elements can float beside the cleared element and on which side.
 
@@ -81,3 +91,34 @@ The `clear` property specifies what elements can float beside the cleared elemen
 - **both** - No floating elements allowed on either the left or the right side
 - **inherit** - The element inherits the clear value of its parent
 The most common way to use the clear property is after you have used a float property on an element.
+
+## Height & Width
+
+The height and width properties are used to set the height and width of an element.
+
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+
+- auto - This is default. The browser calculates the height and width
+- length - Defines the height/width in px, cm etc.
+- % - Defines the height/width in percent of the containing block
+- initial - Sets the height/width to its default value
+- inherit - The height/width will be inherited from its parent value
+
+``` css title="Height/Width"
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+```
+
+
+
+## Max Width
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+Setting the width of a block-level element will prevent it from stretching out to the edges of its container. 
+
+Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:
+
+[Max-with with Margin Auto in W3 School](https://www.w3schools.com/css/tryit.asp?filename=trycss_max-width)

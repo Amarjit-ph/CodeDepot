@@ -19,8 +19,8 @@ It is a syntax extension to JavaScript. We recommend using it with React to desc
 ```jsx title="JSX"
 let template = (
   <div>
-    <h1> Amarjit Pheiroijam</h1>
-    <h2> Sagolband Thangjam Leirak </h2>
+    <h1> Amarjit Pheiroijam </h1>
+    <h2> Chandigarh University </h2>
     <h3> Computer Science Engineer </h3>
   </div>
 );
@@ -40,7 +40,7 @@ After compilation, JSX expressions become regular JavaScript function calls and 
 let user = {
   name: 'Amarjit Pheiroijam',
   age: 23,
-  Address: 'Chandigarh',
+  Address: 'Imphal',
 };
 
 let template2 = (
@@ -60,7 +60,7 @@ In React, you can create distinct components that encapsulate behavior you need.
 var user = {
   name: 'Amarjit Pheiroijam',
   age: 29,
-  Address: 'Chandigarh',
+  Address: 'Imphal',
 };
 
 function getLoc(location) {

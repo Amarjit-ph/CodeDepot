@@ -11,12 +11,12 @@ A combinator is something that explains the relationship between the selectors.
 A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
 
 There are four different combinators in CSS:
-- descendant selector (space)
-- child selector (>)
-- adjacent sibling selector (+)
-- general sibling selector (~)
+1. descendant selector (space)
+2. child selector (>)
+3. adjacent sibling selector (+)
+4. general sibling selector (~)
 
-### Descendant Selector
+### Descendant 
 The descendant selector matches all elements that are descendants of a specified element.
 
 The following example selects all `<p>` elements inside `<div>` elements: 
@@ -26,7 +26,7 @@ div p {
 }
 ```
 
-### Child Selector
+### Child 
 The child selector selects all elements that are the children of a specified element.
 
 The following example selects all `<p>` elements that are children of a `<div>` element:
@@ -36,7 +36,7 @@ div > p {
 }
 ```
 
-### Adjacent Sibling Selector
+### Adjacent Sibling 
 The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
 
 Sibling elements must have the same parent element, and "adjacent" means "immediately following".
@@ -49,7 +49,7 @@ div + p {
 }
 ```
 
-### General Sibling Selector
+### General Sibling 
 The general sibling selector selects all elements that are siblings of a specified element.
 
 The following example selects all `<p>` elements that are siblings of `<div>` elements: 
@@ -96,51 +96,8 @@ img {
   opacity: 0.5;
 }
 
-// Opacity when hover
-
+/* Opacity when hover */
 img:hover {
   opacity: 1.0;
 }
 ```
-
-## Navigation Bars
-Navigation Bar = List of Links<br/>
-A navigation bar needs standard HTML as a base.
-
-A navigation bar is basically a list of links, so using the `<ul>` and `<li>` elements makes perfect sense:
-
-``` html title="Navigation - Html"
-<ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul>
-```
-``` css title="Navigation - Css"
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-```
-**EXPLAINATION :**
-- `list-style-type: none;` - Removes the bullets. A navigation bar does not need list markers
-- Set `margin: 0; and padding: 0;` to remove browser default settings
-
-
-### Vertical Navigation Bar
-```css
-li{
-  display: block;
-}
-```
-### Horizontal Navigation Bar
-One way to build a horizontal navigation bar is to specify the `<li>` elements as inline, in addition to the "standard" code from the previous page:
-
-```css
-li {
-  display: inline;
-}
-```
-

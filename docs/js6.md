@@ -24,7 +24,7 @@ const person = {
 person.greet();
 ```
 
-## Accessing Properties
+## Accessing 
 
 ```js
 objectName.property      [  person.age           ]
@@ -32,7 +32,7 @@ objectName["property"]   [  person["age"]        ]
 objectName[expression]   [  x = "age"; person[x] ]
 ```
 
-## Adding & Modifying Properties
+## Modifying 
 
 ```js
 person.isAdmin = true;      [Add]

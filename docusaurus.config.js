@@ -31,8 +31,8 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/Amarjit-ph/CodeDepot',
-          label: 'Cheatsheets',
+          href: 'https://devhints.io/',
+          label: 'Cheat Sheet',
           position: 'left',
         },
         {
@@ -47,7 +47,7 @@ module.exports = {
       style: 'dark',
       links: [
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} CodeDepot, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CodeDepot.`,
     },
   },
   presets: [

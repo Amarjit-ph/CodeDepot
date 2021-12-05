@@ -226,7 +226,7 @@ for (let i = 0; i < 3; i++) {
 }
 ```
 
-### for-of loop
+### for-of loop [Array]
 
 Execute for every element in an array
 
@@ -236,7 +236,7 @@ for (const el of array) {
 }
 ```
 
-### for-in loop
+### for-in loop [Object]
 
 Execute for every key in an object
 
