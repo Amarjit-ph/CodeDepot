@@ -1,6 +1,4 @@
-
 # CheatSheets for Developers 
-
 I compiled a list of the (in my opinion) best Cheat sheets and tutorials for some of the languages, frameworks and tools out there. I considered clarity, interactivity and simplicity for beginners. Lets go!
 
 Technology Interview
@@ -25,36 +23,37 @@ Java
 - [Java Tutorial](https://www.educba.com/category/software-development/software-development-tutorials/java-tutorial/)
 
 SQL, MySQL
-- https://devhints.io/mysql
-- https://overapi.com/mysql
+- [MySQL Devhints](https://devhints.io/mysql)
+- [MySQL OverApi](https://overapi.com/mysql)
 
 React
-- http://www.developer-cheatsheets.com/react
-- https://devhints.io/react
-- https://dev.to/codeartistryio/the-react-cheatsheet-for-2020-real-world-examples-4hgg
+- [React cheat sheet](http://www.developer-cheatsheets.com/react)
+- [React Devhints](https://devhints.io/react)
+- [React Cheatsheet](https://dev.to/codeartistryio/the-react-cheatsheet-for-2020-real-world-examples-4hgg)
 
 Redux
-- http://www.developer-cheatsheets.com/redux
-- https://devhints.io/redux
-- https://github.com/linkmesrl/react-journey-2016/blob/master/resources/egghead-redux-cheat-sheet-3-2-1.pdf
+- [Redux cheat sheet](http://www.developer-cheatsheets.com/redux)
+- [Redux Devhints](https://devhints.io/redux)
+- [Redux EggHead](https://github.com/linkmesrl/react-journey-2016/blob/master/resources/egghead-redux-cheat-sheet-3-2-1.pdf)
 
 Node.js
-- https://devhints.io/nodejs
-- https://overapi.com/nodejs
-- https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf
-- https://dev.to/jorge_rockr/everything-you-need-to-know-about-node-js-lnc
+- [Node Devhints](https://devhints.io/nodejs)
+- [Node OverApi](https://overapi.com/nodejs)
+- [Bulletproof Node](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf)
+- [Everything you need to know about Node](https://dev.to/jorge_rockr/everything-you-need-to-know-about-node-js-lnc)
 
 NPM
 - [Npm Devhints](https://devhints.io/npm)
 
 Git
-- http://www.ndpsoftware.com/git-cheatsheet.html
-- https://overapi.com/git
-- https://dev.to/maxpou/git-cheat-sheet-advanced-3a17
+- [Git Visual cheat](http://www.ndpsoftware.com/git-cheatsheet.html)
+- [Git OverApi](https://overapi.com/git)
+- [Git Advanced cheat](https://dev.to/maxpou/git-cheat-sheet-advanced-3a17)
 
 
 Visual Studio Code
-- https://devhints.io/vscode
-- https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
-- https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+
+- [Keyboard shortcuts for Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+- [Keyboard shortcuts for MacOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+- [VS Code Devhints](https://devhints.io/vscode)
 
